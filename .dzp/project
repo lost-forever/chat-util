@@ -5,6 +5,6 @@ authors:
   - acikek
 version: 0.1.0
 license: MIT
-homepage: "https://github.com/acikek/chat-util"
-repository: "https://github.com/acikek/chat-util"
+homepage: "https://github.com/lost-forever/chat-util"
+repository: "https://github.com/lost-forever/chat-util"
 dependencies: []
