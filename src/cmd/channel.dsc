@@ -19,5 +19,8 @@ chat_channel:
     - define reason "That channel doesn't exist!"
     - inject cmd_err
 
-  - flag <player> chat.channel:<context.args.first.to_lowercase>
+  - define channel <context.args.first.to_lowercase>
+  - flag <player> chat.meta:<[channel].equals[meta].if_true[true].if_false[!]>
+  - flag <player> chat.channel:<[channel]>
+
   - narrate "<green>Now chatting in <yellow><context.args.first.to_lowercase><green>."

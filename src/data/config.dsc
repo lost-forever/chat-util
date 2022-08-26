@@ -13,6 +13,10 @@ chat_config:
       targets: <player.location.find_players_within[50]>
       color: <light_purple>
       description: players in a 50-block radius
+    meta:
+      targets: <server.online_players_flagged[chat.channel]>
+      color: <gray><italic>
+      description: other meta chatters
 
 chat_prefix:
   type: procedure
