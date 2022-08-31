@@ -9,6 +9,8 @@ chat_handler:
     - else:
       - define channel <script[chat_config].data_key[channels].get[<player.flag[chat.channel]>]>
       - narrate "<proc[chat_prefix]> <[channel].get[color].parsed><context.message>" targets:<[channel].get[targets].parsed>
+      - if <player.flag[chat.channel]> == global:
+        - customevent id:global_chat context:[message=<context.message>]
     on player joins:
     - determine <proc[chat_join]>
     on player quits:
